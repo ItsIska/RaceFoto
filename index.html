@@ -68,30 +68,44 @@
     <h2 class="section-title reveal">Tjenester</h2>
     <div class="services-grid reveal">
       <div class="service-item">
-        <div class="service-icon"><i class="fas fa-camera"></i></div>
+        <div class="service-icon"><i class="fa-sharp fas fa-camera"></i></div>
         <h3>Bilfotograf</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget fringilla tortor. Quisque sit amet sapien ut est luctus consectetur.</p>
+        <p>Jeg tar bilder av bilen din i riktig lys og fra de beste vinklene – både når den står stille og i fart. Vi avtaler sted og stil, og jeg leverer en pakke med nøye utvalgte bilder som viser bilen fra sin beste side.</p>
         <p>Inkluderer:</p>
         <ul>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <li>Profesjonelle bilder av bilen – både stillestående og i bevegelse</li>
+          <li>5–10 utvalgte bilder i høy oppløsning</li>
+          <li>Fleksibel lokasjon – vi møtes der bilen ser best ut</li>
         </ul>
-        <span class="price">Pris: 9999 NOK</span>
+        <span class="price">Pris: 600 NOK</span>
         <a href="#contact" class="service-cta">Bestill nå</a>
       </div>
       
       <div class="service-item">
-        <div class="service-icon"><i class="fas fa-helicopter"></i></div>
-        <h3>Dronebilder</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget fringilla tortor. Quisque sit amet sapien ut est luctus consectetur.</p>
+        <div class="service-icon"><i class="fa-solid fa-clapperboard"></i></div>
+        <h3>Redigering</h3>
+        <p>Denne pakken er for deg som allerede har fått bilen fotografert av meg, og ønsker det lille ekstra. Jeg gir bildene et stilrent og profesjonelt uttrykk ved å redigere farger, lys og stemning i Lightroom – men uten å gjøre unaturlige endringer. Jeg redigerer kun bilder jeg selv har tatt, for å sikre best mulig kvalitet.</p>
         <p>Inkluderer:</p>
         <ul>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <li>Redigering i Lightroom – justering av lys, farger, kontrast og skarphet</li>
+          <li>Enkel fjerning av støy og forbedring av detaljer</li>
+          <li>Optimalisering for Instagram, nettsider og deling</li>
         </ul>
-        <span class="price">Pris: 9999 NOK</span>
+        <span class="price">Pris: 400 NOK</span>
+        <a href="#contact" class="service-cta">Bestill nå</a>
+      </div>
+
+      <div class="service-item">
+        <div class="service-icon"><i class="fa-solid fa-box-open"></i></i></div>
+        <h3>Kombopakke</h3>
+        <p>Dette er den mest komplette løsningen. Jeg tar bildene og redigerer dem slik at du får et ferdig resultat som er klart til bruk – enten det er til Instagram, nettside, eller bare for å vise frem bilen din. Alt skjer med min stil og kvalitet, uten bruk av kunstig manipulering.</p>
+        <p>Inkluderer:</p>
+        <ul>
+          <li>Full fotoshoot + profesjonell redigering i Lightroom</li>
+          <li>Levering av redigerte bilder tilpasset dine behov</li>
+          <li>Pakkepris – mer for pengene</li>
+        </ul>
+        <span class="price">Pris: 900 NOK</span>
         <a href="#contact" class="service-cta">Bestill nå</a>
       </div>
     </div>
@@ -101,24 +115,22 @@
     <h2 class="section-title reveal">Portefølje</h2>
     <div class="portfolio-nav reveal">
       <button class="filter-btn active" data-filter="all">Alle</button>
-      <button class="filter-btn" data-filter="racing">Racing</button>
-      <button class="filter-btn" data-filter="studio">Studio</button>
-      <button class="filter-btn" data-filter="events">Events</button>
-      <button class="filter-btn" data-filter="aerial">Dronebilder</button>
+      <button class="filter-btn" data-filter="still">Stillestående</button>
+      <button class="filter-btn" data-filter="driving">Kjørende</button>
     </div>
     <div class="gallery reveal">
-      <a href="images/2016 Porsche 911 GT3 RS-Studio-Oslo Motorshow.jpg" class="gallery-item" data-category="studio" data-lightbox="racefoto-gallery" data-title="Porsche 911 GT3 RS på Oslo Motorshow">
-        <img src="images/2016 Porsche 911 GT3 RS-Studio-Oslo Motorshow.jpg" alt="Studio Porsche" loading="lazy">
+      <a href="images/2016 Porsche 911 GT3 RS-Studio-Oslo Motorshow.jpg" class="gallery-item" data-category="still" data-lightbox="racefoto-gallery" data-title="Porsche 911 GT3 RS på Oslo Motorshow">
+        <img src="images/2016 Porsche 911 GT3 RS-Studio-Oslo Motorshow.jpg" alt="Stillestående Porsche" loading="lazy">
         <div class="overlay">
           <h4>Porsche 911 GT3 RS</h4>
           <span>Oslo Motorshow</span>
         </div>
       </a>
-      <a href="images/2025 BMW M4 Coupe-Racing-Atlanterhavsveien.jpg" class="gallery-item" data-category="aerial" data-lightbox="racefoto-gallery" data-title="BMW M4 Coupe på Atlanterhavsveien">
-        <img src="images/2025 BMW M4 Coupe-Racing-Atlanterhavsveien.jpg" alt="Aerial BMW" loading="lazy">
+      <a href="images/2025 BMW M4 Coupe-Racing-Atlanterhavsveien.jpg" class="gallery-item" data-category="driving" data-lightbox="racefoto-gallery" data-title="BMW M4 Coupe på Atlanterhavsveien">
+        <img src="images/2025 BMW M4 Coupe-Racing-Atlanterhavsveien.jpg" alt="Kjørende BMW" loading="lazy">
         <div class="overlay">
           <h4>BMW M4 Coupe</h4>
-          <span>Dronebilder</span>
+          <span>Atlanterhavsveien</span>
         </div>
       </a>
     </div>
@@ -153,7 +165,8 @@
           <select id="service" name="service" required>
             <option value="">-- Velg tjeneste --</option>
             <option value="fotograf">Bilfotograf</option>
-            <option value="drone">Dronebilder</option>
+            <option value="redigering">Redigering</option>
+            <option value="kombo">Kombopakke</option>
           </select>
           <div class="form-error" id="service-error">Vennligst velg en tjeneste</div>
         </div>

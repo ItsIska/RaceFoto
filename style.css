@@ -252,7 +252,7 @@
 
     .service-item {
       background-color: #1a1a1a;
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 30px;
       transition: transform 0.3s, box-shadow 0.3s;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -328,7 +328,7 @@
       cursor: pointer;
       font-family: 'Rajdhani', sans-serif;
       font-size: 1rem;
-      border-radius: 20px;
+      border-radius: 5px;
       transition: all 0.3s;
     }
     
@@ -349,7 +349,7 @@
 
     .gallery-item {
       position: relative;
-      border-radius: 10px;
+      border-radius: 5px;
       overflow: hidden;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s;

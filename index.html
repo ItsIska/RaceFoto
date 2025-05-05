@@ -34,7 +34,6 @@
         <li><a href="#about">Om Oss</a></li>
         <li><a href="#services">Tjenester</a></li>
         <li><a href="#portfolio">Portefølje</a></li>
-        <li><a href="#testimonials">Kundeomtaler</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
       <div class="menu-toggle">
@@ -61,8 +60,6 @@
         <p>Vivamus viverra pulvinar lorem, eu lobortis lacus iaculis vitae. Vivamus egestas purus sagittis pulvinar vehicula. Nunc vitae lacus eu libero ornare tempus vitae a dui.</p>
         <p>In quis magna facilisis dolor hendrerit accumsan. In pharetra a magna non aliquam. Curabitur id quam in neque fermentum eleifend. Mauris rutrum finibus magna, ut vehicula enim suscipit sed. Cras nibh nunc, dignissim ut tortor dignissim, commodo faucibus diam.</p>
       </div>
-      <div class="about-image">
-        <img src="/images/about-us.jpg" alt="RaceFoto Team" loading="lazy">
       </div>
     </div>
   </section>
@@ -141,32 +138,6 @@
     </div>
   </section>
 
-  <section id="testimonials" class="testimonials">
-    <h2 class="section-title reveal">Kundeomtaler</h2>
-    <div class="testimonial-slider reveal">
-      <div class="testimonial-item active">
-        <p class="quote">RaceFoto leverte bilder langt over mine forventninger. De klarte å fange den perfekte vinkelen som viser bilen min fra sin beste side. Rask og profesjonell service!</p>
-        <p class="client">Anders Johansen</p>
-        <p class="client-info">Porsche 911 eier</p>
-      </div>
-      <div class="testimonial-item">
-        <p class="quote">Videoen de lagde av bilen min på banen er helt fantastisk! De fanget hver detalj og hastigheten på en måte som gjør at man nesten kan føle fartsrusen. Kommer absolutt til å bruke dem igjen.</p>
-        <p class="client">Mia Olsen</p>
-        <p class="client-info">BMW M4 eier</p>
-      </div>
-      <div class="testimonial-item">
-        <p class="quote">Dronebildene av min Audi RS6 langs fjorden er noe av det mest spektakulære jeg har sett. RaceFoto har et unikt blikk for komposisjon og lys.</p>
-        <p class="client">Thomas Berg</p>
-        <p class="client-info">Audi RS6 eier</p>
-      </div>
-      <div class="slider-nav">
-        <button class="nav-dot active" data-index="0"></button>
-        <button class="nav-dot" data-index="1"></button>
-        <button class="nav-dot" data-index="2"></button>
-      </div>
-    </div>
-  </section>
-
   <section id="contact" class="contact-form">
     <h2 class="section-title reveal">Kontakt</h2>
     <div class="contact-content reveal">
@@ -227,10 +198,9 @@
         <h3>RaceFoto</h3>
         <p>Profesjonell motorsportfotografering for bil- og racingentusiaster.</p>
         <div class="social-icons">
-          <a href="#" title="Facebook">FB</a>
-          <a href="#" title="Instagram">IG</a>
-          <a href="#" title="YouTube">YT</a>
-          <a href="#" title="LinkedIn">LI</a>
+          <a href="#" title="Facebook"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="YouTube"><i class="fa-brands fa-facebook"></i></a>
         </div>
       </div>
       <div class="footer-column">
@@ -247,7 +217,6 @@
         <ul>
           <li><a href="#portfolio">Portefølje</a></li>
           <li><a href="#about">Om Oss</a></li>
-          <li><a href="#testimonials">Kundeomtaler</a></li>
           <li><a href="#">Blogg</a></li>
         </ul>
       </div>
@@ -332,37 +301,6 @@
           });
         });
       });
-      
-      // Testimonial slider
-      const testimonials = document.querySelectorAll('.testimonial-item');
-      const dots = document.querySelectorAll('.nav-dot');
-      let currentTestimonial = 0;
-      
-      function showTestimonial(index) {
-        testimonials.forEach(testimonial => testimonial.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-        
-        testimonials[index].classList.add('active');
-        dots[index].classList.add('active');
-        currentTestimonial = index;
-      }
-      
-      // Initialize testimonial slider
-      showTestimonial(0);
-      
-      // Add click event to dots
-      dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-          const index = parseInt(dot.getAttribute('data-index'));
-          showTestimonial(index);
-        });
-      });
-      
-      // Auto slide testimonials
-      setInterval(() => {
-        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-        showTestimonial(currentTestimonial);
-      }, 5000);
       
       // Scroll reveal animation
       function revealOnScroll() {
